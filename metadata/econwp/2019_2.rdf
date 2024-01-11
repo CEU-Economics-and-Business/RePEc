@@ -1,0 +1,32 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Felix Chan 
+Author-Name-First: Felix
+Author-Name-Last: Chan
+
+Author-Name: Ágoston Reguly 
+Author-Name-First: Ágoston
+Author-Name-Last: Reguly
+
+Author-Name: László Mátyás
+Author-Name-First: László
+Author-Name-Last: Mátyás
+
+
+Title: Modelling with Discretized Ordered Choice Covariates
+Abstract: This paper deals with econometric models where some (or all) explanatory variables (or covariates) are observed as discretized ordered choices. Such variables are in theory continuous, but in this form are not observed at all, their distribution is unknown, and instead only a set of discrete choices are observed. We explore how such variables influence inference, more precisely, we show that this leads to a very special form of measurement error, and consequently to endogeneity bias. We then propose appropriate sub-sampling and instrumental variables (IV) estimation methods to deal with the problem. 
+
+
+Number: 2019_2
+Handle: RePEc:ceu:econwp:2019_2
+Creation-Date: 2019-05-02
+Revision-Date: 
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2019_2.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Peter Farkas 
+Author-Name-First: Peter
+Author-Name-Last: Farkas
+
+Author-Name: Laszlo Matyas
+Author-Name-First: Laszlo
+Author-Name-Last: Matyas
+
+
+
+Title: Testing for Unit Roots in Panel Data with Boundary Crossing Counts
+Abstract: This paper introduces a nonparametric, non-asymptotic method for statistical testing based on boundary crossing events. The method is presented by showing it’s use for unit root testing. Two versions of the test are discussed. The first is designed for time series data as well as for cross sectionally independent panel data. The second is taking into account cross-sectional dependence as well. Through Monte Carlo studies we show that the proposed tests are more powerful than existing unit root tests when the error term has t-distribution and the sample size is small. The paper also discusses two empirical applications. The first one analyzes the possibility of mean reversion in the excess returns for the S&P500. Here, the unobserved mean is identified using Shiller’s CAPE ratio. Our test supports mean reversion, which can be interpreted as evidence against strong eﬃcient market hypothesis. The second application cannot confirm the PPP hypothesis in exchange-rate data of OECD countries.
+
+
+
+Number: 2015_5
+Handle: RePEc:ceu:econwp:2015_5
+Creation-Date: 2015-11-03
+Revision-Date: 2015-11-03
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2015_5.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

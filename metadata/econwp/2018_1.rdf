@@ -1,0 +1,28 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Robert Pal Lieli 
+Author-Name-First: Robert P.
+Author-Name-Last: Lieli
+
+Author-Name: Yu-Chin Hsu 
+Author-Name-First: Yu-Chin 
+Author-Name-Last: Hsu 
+
+
+Title: Using the Area Under an Estimated ROC Curve to Test the Adequacy of Binary Predictors 
+Abstract: We consider using the area under an empirical receiver operating characteristic (ROC) curve to test the hypothesis that a predictive index combined with a range of cutoffs performs no better than pure chance in forecasting a binary outcome. This corresponds to the null hypothesis that the area in question, denoted as AUC, is 1/2. We show that if the predictive index comes from a first stage regression model estimated over the same data set, then testing the null based on standard asymptotic normality results leads to severe size distortion in general settings. We then analytically derive the proper asymptotic null distribution of the empirical AUC in a special case; namely, when the first stage regressors are Bernoulli random variables. This distribution can be utilized to construct a fully in-sample test of H0 : AUC = 1=2 with correct size and more power than out-of-sample tests based on sample splitting, though practical application becomes cumbersome with more than two regressors. 
+
+
+Number: 2018_1
+Handle: RePEc:ceu:econwp:2018_1
+Creation-Date: 2018-03-19
+Revision-Date: 
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2018_1.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

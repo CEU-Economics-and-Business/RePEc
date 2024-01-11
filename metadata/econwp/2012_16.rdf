@@ -1,0 +1,33 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Jason Abrevaya 
+Author-Name-First: Jason
+Author-Name-Last: Abrevaya
+
+Author-Name: Yu-Chin Hsu 
+Author-Name-First: Yu-Chin
+Author-Name-Last: Hsu
+
+Author-Name: Robert P. Lieli 
+Author-Name-First: Robert P.
+Author-Name-Last: Lieli
+
+
+
+Title: Estimating Conditional Average Treatment Effects
+Abstract: We consider a functional parameter called the conditional average treatment effect (CATE), designed to capture heterogeneity of a treatment effect across subpopulations when the unconfoundedness assumption applies. In contrast to quantile regressions, the subpopulations of interest are defined in terms of the possible values of a set of continuous covariates rather than the quantiles of the potential outcome distributions. We show that the CATE parameter is nonparametrically identified under the unconfoundedness assumption and propose inverse probability weighted estimators for it. Under regularity conditions, some of which are standard and some of which are new in the literature, we show (pointwise) consistency and asymptotic normality of a fully nonparametric and a semiparametric estimator. We apply our methods to estimate the average effect of a firsttime mother's smoking during pregnancy on the baby's birth weight as a function of per capita income in the mother's zip code. For nonwhite mothers, the average effect of smoking is predicted to become stronger (more negative) as a function of income.
+
+Number: 2012_16
+Handle: RePEc:ceu:econwp:2012_16
+Creation-Date: 2012-07-20
+Revision-Date: 2012-07-20
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2012_16.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Stephen G. Donald 
+Author-Name-First: Stephen G.
+Author-Name-Last: Donald
+
+Author-Name: Yu-Chin Hsu 
+Author-Name-First: Yu-Chin 
+Author-Name-Last: Hsu
+
+Author-Name: Robert P. Lieli
+Author-Name-First: Robert P.
+Author-Name-Last: Lieli
+
+
+Title: Inverse Propensity Score Weighted Estimation of Local Average Treatment Eﬀects and a Test of the Unconfoundedness Assumption
+Abstract: We propose inverse probability weighted estimators for the the local average treatment eﬀect (LATE) and the local average treatment eﬀect for the treated (LATT) under instrumental variable assumptions with covariates. We show that these estimators are asymptotically normal and eﬃcient, and provide a higher order asymptotic mean squared error expansion for the LATE estimator. When the (binary) instrument satisﬁes a condition called one-sided non-compliance, we propose a Hausman-type test of whether treatment assignment is unconfounded conditional on some observables. The test is based on the fact that under one-sided non-compliance LATT coincides with the average treatment eﬀect for the treated. We evaluate the eﬀect of JTPA training programs on the earnings of participants to illustrate our methods. The unconfoundedness test suggests that treatment assignment among males is based partly on unobservables. In contrast, the hypothesis of random treatment assignment cannot be rejected among females. 
+
+
+Number: 2012_9
+Handle: RePEc:ceu:econwp:2012_9
+Creation-Date: 2010-08-11
+Revision-Date: 2010-08-11
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2012_9.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

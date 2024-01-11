@@ -1,0 +1,26 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Cecília Hornok 
+Author-Name-First: Cecília
+Author-Name-Last: Hornok
+
+
+Title: Gravity or Dummies? The Limits of Identification in Gravity Estimations
+Abstract: Trade economists often estimate gravity equations of international trade with fixed effects. Anderson and van Wincoop (2003, American Economic Review 93, 170–192) have shown the importance of controlling for multilateral trade resistances when estimating a gravity equation. This can be done by including exporter-time and importer-time fixed effects in a panel or exporter and importer fixed effects in a cross section estimation. I argue that this approach limits the identifiability of policy parameters that capture the effect of certain ”club memberships” (EU, NAFTA, euro area, WTO, etc.) on trade flows. I show that, in the baseline case, only one effect can be identified, which precludes, for example, the estimation of separate effects on the exporter and the importer side. The magnitude, and even the sign, of the estimated club effect are very sensitive to the precise identification assumptions, which are often left unspecified in empirical studies. The underlying problem is that club membership provides some, but very little bilateral variation. When heterogeneous club effects are to be identified, the membership dummies can become perfectly collinear with the fixed effects. Empirical researchers may not be aware of the lack of identification, because standard estimation techniques often permit them to run perfectly collinear regressions. I illustrate the findings with estimating the effect of EU enlargement in 2004 on the trade flows of new and old members. Finally, I discuss potential solutions.
+
+
+
+Number: 2012_11
+Handle: RePEc:ceu:econwp:2012_11
+Creation-Date: 2012-05-20
+Revision-Date: 2012-05-20
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2012_11.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

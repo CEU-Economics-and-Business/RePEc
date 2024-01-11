@@ -1,0 +1,30 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Daria Pus
+Author-Name-First: Daria
+Author-Name-Last: Pus
+
+Author-Name: László Mátyás
+Author-Name-First: László
+Author-Name-Last: Mátyás
+
+Author-Name: Cecilia Hornok
+Author-Name-First: Cecilia
+Author-Name-Last: Hornok
+
+Title: Modelling Firm-Product Level Trade: A Multi-Dimensional Random Effects Panel Data Approach
+Abstract: The paper deals with the problems of formalizing econometric models on firm-product level trade data sets, or similar economic flows. A multi-dimensional random effects panel data approach is adopted. Several models are introduced taking into account different types of specific effects, interactions and cross correlations. The respective covariance matrixes are derived, as well as procedures to estimate the unknown variance and covariance components, in order to make the Feasible Generalized Least Squares estimation operational. Whenever possible, the spectral decomposition of the covariance matrixes is also provided to make the estimation procedure simpler to implement. Both balanced and unbalanced data sets are considered.
+
+Number: 2013_2
+Handle: RePEc:ceu:econwp:2013_2
+Creation-Date: 2013-02-21
+Revision-Date: 2013-05-08
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2013_2.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2013_2_revised.pdf
+File-Format: application/pdf
+File-Function: Full text
+

@@ -1,0 +1,33 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Péter Bayer 
+Author-Name-First: Péter
+Author-Name-Last: Bayer
+
+Author-Name: György Kozics
+Author-Name-First: György
+Author-Name-Last: Kozics
+
+Author-Name: Nóra Gabriella Szőke
+Author-Name-First: Nóra Gabriella 
+Author-Name-Last: Szőke 
+
+
+Title: Best-Response Dynamics in Directed Network Games
+Abstract: We study public goods games played on networks with possibly non-reciprocal relationships between players. Examples for this type of interactions include one-sided relationships, mutual but unequal relationships, and parasitism. It is well known that many simple learning processes converge to a Nash equilibrium if interactions are reciprocal, but this is not true in general for directed networks. However, by a simple tool of rescaling the strategy space, we generalize the convergence result for a class of directed networks and show that it is characterized by transitive weight matrices. Additionally, we show convergence in a second class of networks; those rescalable into networks with weak externalities. We characterize the latter class by the spectral properties of the absolute value of the network's weight matrix and show that it includes all directed acyclic networks.
+
+
+
+Number: 2020_1
+Handle: RePEc:ceu:econwp:2020_1
+Creation-Date: 2020-01-13
+Revision-Date: 
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2020_1.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

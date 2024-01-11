@@ -1,0 +1,32 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Laszlo Balazsi 
+Author-Name-First: Laszlo
+Author-Name-Last: Balazsi
+
+Author-Name: Felix Chan 
+Author-Name-First: Felix 
+Author-Name-Last: Chan 
+
+Author-Name: Laszlo Matyas 
+Author-Name-First: Laszlo 
+Author-Name-Last: Matyas 
+
+
+Title: Even Count Estimation 
+Abstract: This paper proposes a new estimation procedure called Event Count Estimator (ECE). The estimator is straightforward to implement and it is robust against outliers, censoring and excess zeros in the data. The paper establishes asymptotic properties of the new estimator and the theoretical results are supported by several Monte Carlo experiments. These also show that the estimator has reasonable properties in moderate to large samples. As such, the cost of inefficiency for robustness is negligible from an applied viewpoint. The practical usefulness of the new estimator is demonstrated via an empirical application of the Gravity Model of trade.
+
+
+Number: 2018_2
+Handle: RePEc:ceu:econwp:2018_2
+Creation-Date: 2018-04-11
+Revision-Date: 
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2018_2.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+

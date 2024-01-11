@@ -1,0 +1,32 @@
+﻿Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Markus Mobius
+Author-Name-First: Markus
+Author-Name-Last: Mobius
+
+Author-Name: Tuan Phan 
+Author-Name-First: Tuan
+Author-Name-Last: Phan
+
+Author-Name: Adam Szeidl 
+Author-Name-First: Adam
+Author-Name-Last: Szeidl
+
+
+
+Title: Treasure Hunt: Social Learning in the Field
+Abstract: We seed noisy information to members of a real-world social network to study how information diffusion and information aggregation jointly shape social learning. Our environment features substantial social learning. We show that learning occurs via diffusion which is highly imperfect: signals travel only up to two steps in the conversation network and indirect signals are transmitted noisily. We then compare two theories of information aggregation: a naive model in which people double-count signals that reach them through multiple paths, and a sophisticated model in which people avoid double-counting by tagging the source of information. We show that to distinguish between these models of aggregation, it is critical to explicitly account for imperfect diffusion. When we do so, we find that our data are most consistent with the sophisticated tagged model.
+
+Number: 2015_2
+Handle: RePEc:ceu:econwp:2015_2
+Creation-Date: 2015-03-01
+Revision-Date: 
+File-URL: http://www.personal.ceu.hu/staff/repec/pdf/2015_2.pdf
+File-Format: application/pdf
+File-Function: Full text
+
+
+
+
+
+
