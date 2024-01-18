@@ -1,0 +1,35 @@
+name: Update Index HTML for All Folders
+
+on:
+  push:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Generate Index HTML for Each Folder
+      run: |
+        find . -type d -not -path '*/\.*' | while read -r dir; do
+          if [ "$(ls -A "$dir")" ]; then
+            echo "<html><body><ul>" > "$dir/index.html"
+            for file in "$dir"/*; do
+              [ -e "$file" ] || continue
+              [ -f "$file" ] || continue
+              file_name=$(basename "$file")
+              echo "<li><a href='${file_name}'>${file_name}</a></li>" >> "$dir/index.html"
+            done
+            echo "</ul></body></html>" >> "$dir/index.html"
+          fi
+        done
+
+    - name: Commit and Push
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add .
+        git commit -m 'Update index.html files' || exit 0  # Exit gracefully if no changes
+        git push
