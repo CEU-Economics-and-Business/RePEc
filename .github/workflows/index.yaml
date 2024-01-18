@@ -1,4 +1,4 @@
-name: Update Index HTML for All Folders
+name: Update Index HTML with Subfolders
 
 on:
   push:
@@ -15,12 +15,17 @@ jobs:
       run: |
         find . -type d -not -path '*/\.*' | while read -r dir; do
           if [ "$(ls -A "$dir")" ]; then
-            echo "<html><body><ul>" > "$dir/index.html"
+            echo "<html><body><h2>Index of ${dir#./}</h2><ul>" > "$dir/index.html"
             for file in "$dir"/*; do
               [ -e "$file" ] || continue
-              [ -f "$file" ] || continue
               file_name=$(basename "$file")
-              echo "<li><a href='${file_name}'>${file_name}</a></li>" >> "$dir/index.html"
+              if [ -d "$file" ]; then
+                # For directories, link to their index.html
+                echo "<li><a href='${file_name}/index.html'>${file_name}/</a></li>" >> "$dir/index.html"
+              else
+                # For files, link directly
+                echo "<li><a href='${file_name}'>${file_name}</a></li>" >> "$dir/index.html"
+              fi
             done
             echo "</ul></body></html>" >> "$dir/index.html"
           fi
@@ -31,5 +36,5 @@ jobs:
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
         git add .
-        git commit -m 'Update index.html files' || exit 0  # Exit gracefully if no changes
+        git commit -m 'Update index.html files with subfolder links' || exit 0  # Exit gracefully if no changes
         git push
