@@ -19,10 +19,28 @@ RePEc/
 │   │   └── index.html         # Auto-generated directory index
 │   └── index.html             # Auto-generated directory index
 ├── pdf/
-│   ├── YYYY_N.pdf             # Working paper PDFs
+│   ├── YYYY_N.pdf             # Working paper PDFs (self-hosted only)
 │   └── index.html             # Auto-generated directory index
 └── index.html                 # Root index
 ```
+
+## Hosting Options
+
+The archive supports two hosting models for working paper files:
+
+### Self-Hosted Papers
+Papers stored in the `pdf/` directory of this repository. File-URL points to `https://ceu-economics-and-business.github.io/RePEc/pdf/YYYY_N.pdf`.
+
+**Advantages**: Full control over files, no external dependencies, easier to manage revisions.
+
+**Use when**: Papers are not already published elsewhere, or when institutional control is preferred.
+
+### Zenodo-Hosted Papers
+Papers stored on Zenodo with DOIs. File-URL points to Zenodo's direct download endpoint.
+
+**Advantages**: Permanent DOI, independent citation record, better long-term preservation, automatic versioning, no repository size limits.
+
+**Use when**: Papers are part of a larger research output, need independent DOIs, or require long-term preservation guarantees.
 
 ## RePEc Archive Components
 
@@ -120,7 +138,7 @@ File-Function: Revised version
 
 ## Workflow
 
-### Adding a New Working Paper
+### Adding a New Working Paper (Self-Hosted)
 
 1. **Prepare the PDF**: Add the PDF file to the `pdf/` directory with filename `YYYY_N.pdf`
 
@@ -129,6 +147,83 @@ File-Function: Revised version
 3. **Commit and push**: The GitHub Action will automatically generate index.html files for all directories
 
 4. **Wait for indexing**: RePEc services automatically crawl the archive periodically (typically daily) to integrate new papers
+
+### Adding a New Working Paper (Zenodo-Hosted)
+
+For papers hosted on Zenodo, metadata can be pulled directly from the Zenodo API:
+
+1. **Upload to Zenodo**: Upload the working paper to Zenodo, ensuring:
+   - The paper is published in the `ceueconomics` community
+   - All author information is complete (names, ORCIDs if available, affiliations)
+   - The title and abstract are finalized
+   - The publication date is set appropriately
+
+2. **Retrieve metadata**: Access the Zenodo API at `https://zenodo.org/api/records/{RECORD_ID}` to retrieve metadata in JSON format
+
+3. **Create RDF metadata**: Create `metadata/econwp/YYYY_N.rdf` using Zenodo metadata:
+   - **Title**: Use `metadata.title`
+   - **Authors**: Extract from `metadata.creators[]` array:
+     - `Author-Name`: Use `creators[].name` (format: "Last, First" or "First Last")
+     - `Author-Name-First`: Parse from name
+     - `Author-Name-Last`: Parse from name
+     - `Author-Workplace-Name`: Use `creators[].affiliation` if available
+   - **Abstract**: Use `metadata.description` (strip HTML tags)
+   - **DOI**: Use `metadata.doi`
+   - **Creation-Date**: Use `metadata.publication_date`
+   - **File-URL**: Use `files[0].links.self` (direct download link)
+   - **File-Format**: `application/pdf`
+   - **File-Function**: "Full text"
+
+4. **No PDF upload needed**: Since the file is hosted on Zenodo, do not add it to the `pdf/` directory
+
+5. **Commit and push**: Commit the RDF file; the GitHub Action will update index files
+
+#### Zenodo Metadata Mapping Example
+
+From Zenodo API response:
+```json
+{
+  "metadata": {
+    "title": "CEOs and Firm Performance",
+    "doi": "10.5281/zenodo.17208544",
+    "publication_date": "2025-09-30",
+    "description": "<div>How much do CEOs matter...</div>",
+    "creators": [
+      {
+        "name": "Koren, Miklós",
+        "orcid": "0000-0003-4495-7560"
+      }
+    ]
+  },
+  "files": [
+    {
+      "key": "paper.pdf",
+      "links": {"self": "https://zenodo.org/api/records/17208544/files/paper.pdf/content"}
+    }
+  ]
+}
+```
+
+To RDF template:
+```
+Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Miklós Koren
+Author-Name-First: Miklós
+Author-Name-Last: Koren
+
+Title: CEOs and Firm Performance
+Abstract: How much do CEOs matter...
+
+Number: 2025_1
+Handle: RePEc:ceu:econwp:2025_1
+Creation-Date: 2025-09-30
+DOI: 10.5281/zenodo.17208544
+
+File-URL: https://zenodo.org/api/records/17208544/files/paper.pdf/content
+File-Format: application/pdf
+File-Function: Full text
+```
 
 ### Updating an Existing Paper
 
@@ -185,9 +280,14 @@ Once the archive is set up and registered with RePEc:
 
 6. **File URLs**: Ensure all File-URL entries point to stable, accessible URLs
 
-7. **Version control**: Commit RDF and PDF files together to maintain synchronization
+7. **Version control**: For self-hosted papers, commit RDF and PDF files together to maintain synchronization. For Zenodo-hosted papers, only commit the RDF file
 
 8. **Testing**: Validate RDF syntax using the [RePEc ReDIF validator](https://ideas.repec.org/cgi-bin/validate.cgi) before committing
+
+9. **Zenodo best practices**: 
+   - Use Zenodo's direct file download API endpoint (`/files/{filename}/content`) rather than the HTML landing page
+   - Ensure papers are added to the `ceueconomics` community for proper organization
+   - Include ORCIDs for authors when available to improve author identification
 
 ## References
 
@@ -196,6 +296,8 @@ Once the archive is set up and registered with RePEc:
 - [Working Paper ReDIF Template](https://ideas.repec.org/t/papertemplate.html)
 - [ReDIF Documentation](http://ideas.repec.org/p/rpc/rdfdoc/redif.html)
 - [RePEc Archive Validator](https://ideas.repec.org/cgi-bin/validate.cgi)
+- [Zenodo API Documentation](https://developers.zenodo.org/)
+- [CEU Economics Zenodo Community](https://zenodo.org/communities/ceueconomics)
 
 ## Maintainer Information
 
