@@ -1,0 +1,34 @@
+Template-Type: ReDIF-Paper 1.0
+
+Author-Name: Miklós Koren
+Author-Name-First: Miklós
+Author-Name-Last: Koren
+
+Author-Name: Krisztina Orban
+Author-Name-First: Krisztina
+Author-Name-Last: Orban
+
+Author-Name: Bálint Szilágyi
+Author-Name-First: Bálint
+Author-Name-Last: Szilágyi
+
+Author-Name: Almos Telegdy
+Author-Name-First: Almos
+Author-Name-Last: Telegdy
+
+Author-Name: András Vereckei
+Author-Name-First: András
+Author-Name-Last: Vereckei
+
+Title: CEOs and Firm Performance: Estimation from the Universe of Firms
+
+Abstract: How much do CEOs matter for firm performance? We estimate the causal effect of CEO quality on productivity using comprehensive administrative data covering the universe of Hungarian firms and CEOs from 1992--2022. We develop a production function framework that separates owner-controlled strategic decisions from CEO-controlled operational decisions. To address the severe measurement error in CEO fixed effects arising from short tenures, we introduce a placebo-controlled event study design: we compare actual CEO transitions to randomly assigned fake transitions in firms with stable leadership. The results reveal that a CEO better than the incumbent increases firm performance by 3% while a worse CEO decreases it by 2%. CEO changes contribute to the variance growth of productivity by 30% in the first 10 years of the firm's existence. The placebo-controlled methodology provides a general solution for estimating individual effects in short-panel settings.
+
+Number: 2025_1
+Handle: RePEc:ceu:econwp:2025_1
+Creation-Date: 2025-09-30
+DOI: 10.5281/zenodo.17208544
+
+File-URL: https://zenodo.org/api/records/17208544/files/paper.pdf/content
+File-Format: application/pdf
+File-Function: Full text
